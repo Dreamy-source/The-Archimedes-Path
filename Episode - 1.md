@@ -23,8 +23,8 @@
     - **ArcoLinux**
     - **CachyOS**
     - **Artix Linux**
-      ```markdown
-      Note for pacman users: `qemu-full` installs `everything` (`all architectures`). If you want only `x86_64`, use `qemu-system-x86_64`. But we like `full` — just in case you want to emulate a           `toaster` later.
+      ```bash
+      echo "Note for pacman users: qemu-full installs everything (all architectures`). If you want only x86_64, use qemu-system-x86_64. But we like full — just in case you want to emulate a           toaster later."
       ```
       ```bash
       echo 'Installing: NASM, QEMU'
