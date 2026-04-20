@@ -37,7 +37,7 @@
     - **Raspberry Pi OS**
       ```bash
       echo 'Installing: NASM, QEMU'
-      sudo apt install nasm qemu-system-x86
+      sudo apt install nasm qemu-system-x86-64
       ```
 - ## Windows
 - Download **NASM** from https://nasm.us
