@@ -40,11 +40,11 @@
       sudo apt install nasm qemu-system-x86
       ```
 - ## Windows
-- - Download **NASM** from https://nasm.us
+- Download **NASM** from https://nasm.us
   
-- - Download **QEMU** from https://qemu.org
+- Download **QEMU** from https://qemu.org
 
-- - In installation guide, press "Add to path" button.
+- In installation guide, press "Add to path" button.
 
 # Comming to Episode - 2!
 - Here is **URL** to next episode: https://github.com/Dreamy-source/ASM-for-Humans/blob/main/Episode%20-%202.md
