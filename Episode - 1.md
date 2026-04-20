@@ -26,15 +26,22 @@
     - **NOTE**: for pacman users: **qemu-full** installs **everything** (all architectures`). If you want only **x86_64**, use **qemu-system-x86_64**. But we like **full** — just in case you want to emulate a **toaster** later.
     ---
       ```bash
-      echo "Note for pacman users: qemu-full installs everything (all architectures`). If you want only x86_64, use qemu-system-x86_64. But we like full — just in case you want to emulate a toaster later."
+      echo "========================================"
+      echo "Note: qemu-full installs ALL architectures."
+      echo "If you want only x86_64, use qemu-system-x86_64."
+      echo "We like full — just in case you want to emulate a toaster."
+      echo "========================================"
+      echo ""
+      echo "Installing: NASM, QEMU"
+      echo "Press CTRL+C within 3 seconds to cancel..."
+      sleep 3
+      sudo pacman -S nasm qemu-full
+      echo ""
+      echo "Done. Check versions:"
+      nasm -v
+      qemu-system-x86_64 -version
       ```
     ---
-      ```bash
-      echo 'Installing: NASM, QEMU'
-      echo 'Press CTRL + C, if you need to leave from downloading.'
-      sudo pacman -S nasm qemu-full
-      echo 'Downloading completed, or interrupted by user.'
-      ```
   - ### Apt
     - **Debian**
     - **Ubuntu**
