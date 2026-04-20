@@ -16,6 +16,7 @@
 
 # Instructions [this is not hard, bro]
 - **add** - Add. Just **add**.
+- **add example**:
 - ```asm
   mov ax, 5   ; ax = 5
   add ax, 3   ; adding number 3 to ax
