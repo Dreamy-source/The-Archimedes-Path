@@ -25,7 +25,7 @@
 - - `mov ax, 5`
   - `add ax, 3`
   - **Getting - 8**
-  - **add ended, now, this hard?**
+- **add ended, now, this hard?**
  
   # Comming to Episode - 3!
   - Here is **URL** to next episode: https://github.com/Dreamy-source/ASM-for-Humans/blob/main/Episode%20-%203.md
