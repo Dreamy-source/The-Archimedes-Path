@@ -10,7 +10,7 @@
   ; Result: 6 ✅
   ```
 ---
--  **✅ Dec** is just a **-1** number. Economy and **fast**! [1 - 2 Byte] 🧊.
+-  **✅ Dec** is just a **-1** number. Economy and **fast**! [1 Byte] 🧊.
 - ```asm
   mov ax, 5   ; [📦] ax = 5
   dec ax      ; [📦] ax = 4  [1 Byte]
