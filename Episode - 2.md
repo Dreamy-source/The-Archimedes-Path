@@ -17,13 +17,17 @@
 # Instructions [this is not hard, bro]
 - **sub** - Sub. Just sub. Okay? Just **subtract**.
 - **sub example**:
-- - `mov ax, 5`
-  - `sub ax, 2`
+- ```asm
+  mov ax, 5
+  sub ax, 2
+  ```
   - **Getting - 3**
 - **sub ended, this is hard?**
 - **add** - Add. Just add.
-- - `mov ax, 5`
-  - `add ax, 3`
+- ```asm
+  mov ax, 5
+  add ax, 3
+  ```
   - **Getting - 8**
 - **add ended, now, this hard?**
  
