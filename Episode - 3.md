@@ -1,7 +1,7 @@
 ### Episode 3 🚀
 
 ## Inc, Dec [+1] or [-1]
--  **Inc** is just a **+1** number. Economy and **fast!** [1 Byte] 🧊.
+-  **✅ Inc** is just a **+1** number. Economy and **fast!** [1 Byte] 🧊.
 - ```asm
   mov ax, 5   ; [📦] ax = 5
   inc ax      ; [📦] ax = 6  [1 Byte]
@@ -10,7 +10,7 @@
   ; Result: 6 ✅
   ```
 ---
--  **Dec** is just a **-1** number. Economy and **fast**! [1 - 2 Byte] 🧊.
+-  **✅ Dec** is just a **-1** number. Economy and **fast**! [1 - 2 Byte] 🧊.
 - ```asm
   mov ax, 5   ; [📦] ax = 5
   dec ax      ; [📦] ax = 4  [1 Byte]
