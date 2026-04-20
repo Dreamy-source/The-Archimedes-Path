@@ -9,6 +9,7 @@
   ; Just increase on 1 ⭐
   ; Result: 6 ✅
   ```
+---
 -  **Dec** is just a **-1** number. Economy and **fast**! [1 - 2 Byte] 🧊.
 - ```asm
   mov ax, 5   ; [📦] ax = 5
@@ -17,14 +18,24 @@
   ; Just decrease on 1 ⭐
   ; Result: 4 ✅
   ```
-
+---
+-  **⚠️ Bad example [Add]**:
+- ```asm
+  mov ax, 5   ; [📦] ax = 5
+  add ax, 1   ; [📦] ax = 4  [3 - 4 Byte] ❗
+  
+  ; 
+  ; Result: 6, but i lost 3 - 4 bytes ❌
+  ; Why? Because if you need increase number to 1, do inc ✅
+---
 -  **⚠️ Bad example [Sub]**:
 - ```asm
   mov ax, 5   ; [📦] ax = 5
   sub ax, 1   ; [📦] ax = 4  [3 - 4 Byte] ❗
   
   ; 
-  ; Result: 4, but i lost 3 - 4 bytes 😢
+  ; Result: 4, but i lost 3 - 4 bytes ❌
+  ; Why? Because if you need decrease number to 1, do dec ✅
   
 # 📦 Instructions [This is not hard]
 ## 🔧 ADD
