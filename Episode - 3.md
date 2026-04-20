@@ -9,7 +9,7 @@
 - **why inc, but not add?**
 - - I can do:
   - `add ax, 1` - okay, i added 1 into box `ax`, but this is 3 - 4 bytes and **slowly**!
-  - `inc ax` - **good**, i added 1 into box `ax`, and this 1 - 2 bytes and **fastly**!
+  - `inc ax` - **good**, i added 1 into box `ax`, and this 1 - 2 bytes and **fast**!
 
 **Example:**
 - `mov ax, 5`
