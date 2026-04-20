@@ -6,10 +6,15 @@
 
 - `inc ax` — **add** 1 to box **ax** (increment)
 - `dec ax` — **subtract** 1 from box **ax** (decrement)
-- **why inc, but not add?**
+- **why inc or dec, but not add or sub?**
 - - I can do:
   - `add ax, 1` - okay, i added 1 into box `ax`, but this is 3 - 4 bytes and **slowly**!
   - `inc ax` - **good**, i added 1 into box `ax`, and this 1 - 2 bytes and **fast**!
+ 
+  - And sub:
+ 
+  - `sub ax, 1` - okay, i subed 1 from box `ax`, but this is 3 - 4 bytes and **slowly**!
+  - `dec ax` - **good**, i subed 1 from box `ax`, and this 1 - 2 bytes and **fast**!
 
 **Example:**
 - `mov ax, 5`
