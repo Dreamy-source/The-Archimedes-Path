@@ -33,6 +33,7 @@
       echo 'Installing: NASM, QEMU'
       echo 'Press CTRL + C, if you need to leave from downloading.'
       sudo pacman -S nasm qemu-full
+      echo 'Downloading completed, or interrupted by user.'
       ```
   - ### Apt
     - **Debian**
@@ -46,6 +47,7 @@
       echo 'Installing: NASM, QEMU'
       echo 'Press CTRL + C, if you need to leave from downloading.'
       sudo apt install nasm qemu-system-x86-64
+      echo 'Downloading completed, or interrupted by user.'
       ```
 - ## Windows
 - Download **NASM** from https://nasm.us
@@ -59,6 +61,12 @@
   nasm -v
   qemu-system-x86_64 -version
   ```
+- ## MacOS
+  - Install **Homebrew** first (https://brew.sh)
+  - Then:
+    ```bash
+    brew install nasm qemu
+    ```
 - If commands has been completed successfully, with pointers on version of **NASM** and **QEMU** — then go to next.
 
 # Comming to Episode - 2!
