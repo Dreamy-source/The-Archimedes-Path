@@ -14,17 +14,30 @@
 - **NOTE:** All commands for running/compiling will be according to the book further
 
 ## Instalation
-  - **Arch Linux**
-  - **Debian**
-  - **Manjaro**
-  - **EndeavourOS**
-  - **Garuda Linux**
-  - **ArcoLinux**
-  - **CachyOS**
-  - **Artix Linux**
-    - ```bash
+- **Linux**
+  - **Pacman**
+    - **Arch Linux**
+    - **Manjaro**
+    - **EndeavourOS**
+    - **Garuda Linux**
+    - **ArcoLinux**
+    - **CachyOS**
+    - **Artix Linux**
+      ```bash
       echo 'Installing: NASM, QEMU'
       sudo pacman -S nasm qemu-full
+      ```
+  - **Apt**
+    - **Debian**
+    - **Ubuntu**
+    - **Linux Mint**
+    - **Kali Linux**
+    - **Zorin OS**
+    - **Elementary OS**
+    - **Raspberry Pi OS**
+      ```bash
+      echo 'Installing: NASM, QEMU'
+      sudo apt install nasm qemu-system-x86
       ```
 - **Windows**
 - - Download **NASM** from https://nasm.us
