@@ -13,8 +13,8 @@
  
   - ## And sub:
  
-  - `sub ax, 1` - okay, i subed 1 from box `ax`, but this is 3 - 4 bytes and **slowly**!
-  - `dec ax` - **good**, i subed 1 from box `ax`, and this 1 - 2 bytes and **fast**!
+  - `sub ax, 1` - okay, i subtracted 1 from box `ax`, but this is 3 - 4 bytes and **slow**!
+  - `dec ax` - **good**, i subtracted 1 from box `ax`, and this 1 - 2 bytes and **fast**!
 
 **Example:**
 - `mov ax, 5`
@@ -39,6 +39,6 @@
 
 ## My notebook (5 months of learning)
 
-[Здесь будет ссылка на твой файл с заметками]
+[nothing...]
 
 # Comming to Episode - 4!
