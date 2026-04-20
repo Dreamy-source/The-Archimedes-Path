@@ -14,7 +14,7 @@
 - **NOTE:** All commands for running/compiling will be according to the book further
 
 ## Instalation
-- **Linux**
+- ## Linux
   - **Pacman**
     - **Arch Linux**
     - **Manjaro**
@@ -39,7 +39,7 @@
       echo 'Installing: NASM, QEMU'
       sudo apt install nasm qemu-system-x86
       ```
-- **Windows**
+- ## Windows
 - - Download **NASM** from https://nasm.us
   
 - - Download **QEMU** from https://qemu.org
