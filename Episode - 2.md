@@ -22,8 +22,8 @@
 - ```asm
   mov ax, 5   ; ax = 5
   add ax, 3   ; adding number 3 to ax
+  ; Result: 8
   ```
-  - **Getting - 8**
 ---
 - **sub** - Sub. Just sub. Just **subtract**.
 - **sub example**:
