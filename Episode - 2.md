@@ -17,7 +17,6 @@
 # Instructions [this is not hard, bro]
 ## ADD
 ```asm
-; add - Add. Just add.
 ; add example:
 
 mov ax, 5   ; ax = 5
@@ -28,7 +27,6 @@ add ax, 3   ; adding number 3 to ax
 ---
 ## SUB
 ```asm
-; sub - Sub. Just sub. Just subtract.
 ; sub example:
 
 mov ax, 5   ; ax = 5
