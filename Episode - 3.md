@@ -23,7 +23,7 @@
 
 **Nothing difficult.**
 
-## Flags [if-else for CPU]
+## Flags [if-else]
 
 - **CPU** has hidden boxes. They store **yes/no** answers.
 - After `sub ax, bx`:
