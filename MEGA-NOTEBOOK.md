@@ -1,4 +1,4 @@
-# My 5-Month Notebook: 16-bit Assembly from Zero
+# My Notebook: 16-bit Assembly from Zero
 
 I wrote this while learning. No bullshit. Just what works.
 
