@@ -8,7 +8,7 @@
 - `dec ax` — **subtract** 1 from box **ax** (decrement)
 - **why inc or dec, but not add or sub?**
 - - ## I can do:
-  - `add ax, 1` - okay, i added 1 into box `ax`, but this is 3 - 4 bytes and **slowly**!
+  - `add ax, 1` - okay, i added 1 into box `ax`, but this is 3 - 4 bytes and **slow**!
   - `inc ax` - **good**, i added 1 into box `ax`, and this 1 - 2 bytes and **fast**!
  
   - ## And sub:
