@@ -1,7 +1,7 @@
 ### Episode 2 🚀
 
 # Machine, brrzz.. wtf bro?!
-- ⚠️ — I will not explain how to open a **text editor**, so we move on to studying!.
+- ⚠️ I will not explain how to open a **text editor**, so we move on to studying!.
 
 ## Registers [Boxes]
 -  **Register** is just a **box - 📦**. You put numbers — or whatever you need — **into it**.
