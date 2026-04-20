@@ -19,19 +19,21 @@
 - add - Add. Just add.
 - add example:
 ```
-- ```asm
-  mov ax, 5   ; ax = 5
-  add ax, 3   ; adding number 3 to ax
-  ; Result: 8
-  ```
+```asm
+mov ax, 5   ; ax = 5
+add ax, 3   ; adding number 3 to ax
+; Result: 8
+```
 ---
+```markdown
 - **sub** - Sub. Just sub. Just **subtract**.
 - **sub example**:
-- ```asm
-  mov ax, 5   ; ax = 5
-  sub ax, 2   ; subtract 2 from ax
-  ```
-  - **Getting - 3**
+```
+```asm
+mov ax, 5   ; ax = 5
+sub ax, 2   ; subtract 2 from ax
+; Result: 8
+```
 ---
  
   # Comming to Episode - 3!
