@@ -21,7 +21,6 @@
   add ax, 3   ; adding number 3 to ax
   ```
   - **Getting - 8**
-- **add ended, now, this hard?**
 ---
 - **sub** - Sub. Just sub. Okay? Just **subtract**.
 - **sub example**:
@@ -30,7 +29,6 @@
   sub ax, 2   ; subtract 2 from ax
   ```
   - **Getting - 3**
-- **sub ended, this is hard?**
 ---
  
   # Comming to Episode - 3!
