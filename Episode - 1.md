@@ -44,47 +44,7 @@
   
 - - Download **QEMU** from https://qemu.org
 
-- - Add both to PATH (or just use WSL)
+- - In installation guide, press "Add to path" button.
 
 # Comming to Episode - 2!
 - Here is **URL** to next episode: https://github.com/Dreamy-source/ASM-for-Humans/blob/main/Episode%20-%202.md
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-- Wait, are you here? Ok.
