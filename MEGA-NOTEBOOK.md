@@ -339,13 +339,13 @@ clear_screen   ; call the macro
 ## Quick Reference: Flags and Jumps
 |  Jump   |Condition|	 C meaning  |
 |---------|---------|---------------|
-|jz	       |ZF = 1|	             |if (x == 0)   |
-|jnz	   |ZF = 0	if|          |(x != 0)   |
-|je	       |same as jz|	         |if (x == y)|
+|jz	       |ZF = 1	             |if (x == 0)|
+|jnz	   |ZF = 0	if          |(x != 0)   |
+|je	       |same as jz	         |if (x == y)|
 |jne	   |same as jnz	         |if (x != y)|
-|jl	       |less (signed)	     |if (x < y)|
-|jg	       |greater (signed)	 |if (x > y)|
-|jb	       |below (unsigned)	 |if (x < y)|
-|ja	       |above (unsigned)	 |if (x > y)|
+|jl	       |less (signed)	     |if (x < y) |
+|jg	       |greater (signed)	 |if (x > y) |
+|jb	       |below (unsigned)	 |if (x < y) |
+|ja	       |above (unsigned)	 |if (x > y) |
 
 ### End of notebook. Go write some code.
