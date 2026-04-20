@@ -3,7 +3,7 @@
 # Development environment
 
 - **NASM** — because we write **real assembly**, not that fake stuff.
-- **QEMU** — so you don't kill your computer (but if you want to live dangerously — a **USB** stick works too).
+- **QEMU** — so you **don't kill your computer** (but if you want to live dangerously — a **USB** stick works too).
 - **Text Editor** — Notepad, NANO, NP++, Notebook, VS Code or any other text editor.
 - **Brain** — the most important tool. Must be turned **on**.
 
