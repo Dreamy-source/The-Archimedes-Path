@@ -192,43 +192,160 @@ Address = 0x10000 + 0x1234 = 0x11234
 
 ---
 
+## Control Instructions
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Instruction | What it does |
+|-------------|--------------|
+| `jmp label` | Unconditional jump |
+| `call label` | Call function |
+| `ret`       | Return from function |
+| `int n`     | Software interrupt |
+| `iret`      | Return from interrupt |
+| `cli`       | Disable interrupts |
+| `sti`       | Enable interrupts |
+| `hlt`       | Stop CPU (until interrupt) |
+| `nop`       | Do nothing (delay) |
 
 ---
+
+## Basic Colors (for text mode)
+
+| Code | Color         | HEX  | Example (black background) |
+|------|---------------|------|----------------------------|
+| 0    | Black         | 0x0  | 0x00 (invisible) |
+| 1    | Blue          | 0x1  | 0x01 |
+| 2    | Green         | 0x2  | 0x02 |
+| 3    | Cyan          | 0x3  | 0x03 |
+| 4    | Red           | 0x4  | 0x04 |
+| 5    | Magenta       | 0x5  | 0x05 |
+| 6    | Orange/Brown  | 0x6  | 0x06 |
+| 7    | Light Gray    | 0x7  | 0x07 (default) |
+
+---
+
+### Bright Colors
+
+| Code | Color           | HEX  |
+|------|-----------------|------|
+| 8    | Dark Gray       | 0x08 |
+| 9    | Light Blue      | 0x09 |
+| 10   | Light Green     | 0x0A |
+| 11   | Light Cyan      | 0x0B |
+| 12   | Light Red       | 0x0C |
+| 13   | Light Magenta   | 0x0D |
+| 14   | Yellow          | 0x0E |
+| 15   | Bright White    | 0x0F |
+
+### Blinking Text
+
+Set bit 7 in attribute (add `0x80`) — text blinks.
+
+| HEX  | Result |
+|------|--------|
+| 0x8F | Bright white on black, blinking |
+| 0x8E | Yellow, blinking |
+| 0x87 | Gray, blinking |
+
+---
+
+## NASM Syntax Tricks
+
+### Custom Syntax
+
+```asm
+%idefine move mov    ; now you can write "move ax, 5"
+%define BLACK 0x0    ; color constant
+```
+
+## Defining Constants
+
+```asm
+%define TRUE 1
+%define FALSE 0
+%define NULL 0
+
+%define VIDEO_MEMORY 0xB8000
+%define SCREEN_WIDTH 80
+%define SCREEN_HEIGHT 25
+
+%define VAR1 10
+%define VAR2 VAR1+5   ; VAR2 = "VAR1+5"
+
+%xdefine VAR3 VAR1+5  ; VAR3 = "10+5" (expanded immediately)
+```
+
+## Numeric Values with %assign
+
+```asm
+%assign counter 0
+%assign counter counter+1  ; counter = 1
+%assign counter counter*2  ; counter = 2
+```
+
+## Macro: Clear Screen
+```asm
+%macro clear_screen 0
+    pusha
+    mov edi, 0xB8000
+    mov ecx, 80*25
+    mov eax, 0x0720
+    rep stosw
+    popa
+%endmacro
+
+clear_screen   ; call the macro
+```
+
+## Extra Notes (from my coding)
+
+    - sti — enable interrupts (Set Interrupts)
+
+    - cli — disable interrupts (ignore interrupt noise)
+
+    - bl — low 8 bits of ebx (holds numbers 0-255, one byte)
+
+    - test — bitwise AND without saving result
+
+        - Sets processor flags (ZF, SF, etc.)
+
+        - test bl, 0x80 — checks if bit 7 is set
+
+        - For scan codes: bit 7 = 1 means key release, 0 = key press
+
+    - jz — jump if zero (ZF = 1)
+
+        - Example: if (scancode & 0x80) == 0 → key release
+
+    - jne — jump if not equal (ZF = 0)
+
+        - Example: cmp al, 'z' / jne .no_shift
+
+    - byte — size specifier
+
+        - mov byte [shift_pressed], 1 — copy 1 byte
+
+        - Without byte, NASM doesn't know the size
+
+        - mov word [var], 1 — 2 bytes
+
+        - ov dword [var], 1 — 4 bytes
+
+    - Dot in labels — local labels
+
+        - .key_release: — only visible inside current global label
+
+        - Allows same names (like .done) in different functions — no conflicts
+
+## Quick Reference: Flags and Jumps
+Jump	      Condition	   C meaning
+jz	ZF = 1	if           (x == 0)
+jnz	ZF = 0	if           (x != 0)
+je	same as jz	         if (x == y)
+jne	same as jnz	         if (x != y)
+jl	less (signed)	       if (x < y)
+jg	greater (signed)	   if (x > y)
+jb	below (unsigned)	   if (x < y)
+ja	above (unsigned)	   if (x > y)
+
+### End of notebook. Go write some code.
+-
